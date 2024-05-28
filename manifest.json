@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Timbra Extensions",
+  "description": "Ce la devi fare da solo, altrimenti sei squalificato",
+  "version": "1.0",
+  "action": {
+    "default_popup": "timbra.html",
+    "default_icon": "icons/fantozzi.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.msc.com/*",
+        "https://www.mymsc.com/*"
+      ]
+    }
+  ]
+}
